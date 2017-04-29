@@ -14,9 +14,9 @@ Summary: Python wrapper for the Mastodon API
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/mastodon.py-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/mastodon.py-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/mastodon.py-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/mastodon.py-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/mastodon.py-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/mastodon-py-feedstock/branch/master)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/tmp1c2bcwf2-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/tmp1c2bcwf2-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/tmp1c2bcwf2-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/tmp1c2bcwf2-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/tmp1c2bcwf2-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/tmp1c2bcwf2-feedstock/branch/master)
 
 Current release info
 ====================
