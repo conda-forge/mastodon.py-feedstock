@@ -16,20 +16,22 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }}  -m pip install --no-deps --ignore-installed --no-cache-dir -vvv .
 
 requirements:
   build:
     - python
     - pip
-    - pytest-runner
 
   run:
     - python
     - requests
     - python-dateutil
+    - six
     - pytz
-    - decorator
+    - decorator >=4.0.0
+    - http_ece >=1.0.5
+    - cryoptography >=1.6.0
 
 test:
   imports:
