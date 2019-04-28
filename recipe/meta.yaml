@@ -1,8 +1,8 @@
 {% set name = "Mastodon.py" %}
-{% set version = "1.2.2" %}
+{% set version = "1.4.0" %}
 {% set bundle = "tar.gz" %}
 {% set hash_type = "sha256" %}
-{% set hash = "ca3db745a07d74c985cdeeee7c3937bf8b389aef69b89d66c7ddcfed8ffbffeb" %}
+{% set hash = "9d0d469a46cc28ed4d8450422cd868973c330978bab3680b643ebb28ec7d3ffa" %}
 
 package:
   name: {{ name|lower }}
