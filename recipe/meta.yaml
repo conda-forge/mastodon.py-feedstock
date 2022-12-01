@@ -1,7 +1,7 @@
 {% set name = "Mastodon.py" %}
-{% set version = "1.6.3" %}
+{% set version = "1.7.0" %}
 {% set bundle = "tar.gz" %}
-{% set hash = "a4911cad48ece7cd14541fd66b1315fa55f1f1db8a11f8cb3ee0e5021ff43c3e" %}
+{% set hash = "d97d855131fafcd9d0091b8a5d10130b3eaf673bbde45bce1d13037d1d6a9106" %}
 
 package:
   name: {{ name|lower }}
@@ -18,7 +18,7 @@ build:
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
-  build:
+  host:
     - python >=3.6
     - pip
     - pytest-runner
