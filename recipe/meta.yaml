@@ -1,21 +1,18 @@
 {% set name = "Mastodon.py" %}
 {% set version = "2.1.4" %}
-{% set bundle = "tar.gz" %}
-{% set hash = "6602e9ca4db37c70b5adae5964d02e9a529f6cc8473947a314261008add208a5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.{{ bundle }}
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mastodon_py-{{ version }}.tar.gz
-  sha256: {{ hash }}
+  sha256: 6602e9ca4db37c70b5adae5964d02e9a529f6cc8473947a314261008add208a5
 
 build:
+  number: 1
   noarch: python
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
@@ -25,17 +22,18 @@ requirements:
 
   run:
     - python >={{ python_min }}
-    - requests
+    - requests >=2.4.2
     - python-dateutil
-    - six
-    - pytz
+    - python-magic
     - decorator >=4.0.0
-    - http-ece >=1.0.5
-    - cryptography >=1.6.0
+    - blurhash >=1.1.4
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
+  commands:
+    - pip check
   imports:
     - mastodon
 

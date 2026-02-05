@@ -1,0 +1,12 @@
+--- mastodon_py-2.1.4.orig/pyproject.toml	2025-09-23 06:38:35.000000000 -0300
++++ mastodon_py-2.1.4/pyproject.toml	2026-02-05 10:11:26.214063491 -0300
+@@ -23,8 +23,7 @@
+ dependencies = [
+     'requests>=2.4.2',
+     'python-dateutil',
+-    'python-magic-bin ; platform_system=="Windows"',
+-    'python-magic ; platform_system!="Windows"',
++    'python-magic',
+     'decorator>=4.0.0',
+     'blurhash>=1.1.4',
+ ]
