@@ -1,5 +1,5 @@
 {% set name = "Mastodon.py" %}
-{% set version = "2.1.4" %}
+{% set version = "2.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mastodon_py-{{ version }}.tar.gz
-  sha256: 6602e9ca4db37c70b5adae5964d02e9a529f6cc8473947a314261008add208a5
+  sha256: 5bd4f0c2371087cb70330f1ec1fb8bec4ea2c88353c3f5e3aecef8c193285a94
   patches:
     - python-magic.patch
 
 build:
-  number: 2
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
