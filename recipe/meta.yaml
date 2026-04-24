@@ -12,7 +12,7 @@ source:
     - python-magic.patch
 
 build:
-  number: 2
+  number: 3
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -20,6 +20,7 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
+    - setuptools >=64
     - pytest-runner
 
   run:
