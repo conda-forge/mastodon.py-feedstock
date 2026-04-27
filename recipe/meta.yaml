@@ -8,11 +8,9 @@ package:
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mastodon_py-{{ version }}.tar.gz
   sha256: 6602e9ca4db37c70b5adae5964d02e9a529f6cc8473947a314261008add208a5
-  patches:
-    - python-magic.patch
 
 build:
-  number: 3
+  number: 4
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
@@ -22,6 +20,7 @@ requirements:
     - pip
     - setuptools >=64
     - pytest-runner
+    - python-magic
 
   run:
     - python >={{ python_min }}
@@ -29,6 +28,7 @@ requirements:
     - python-dateutil
     - decorator >=4.0.0
     - blurhash >=1.1.4
+    - python-magic
 
 test:
   requires:
