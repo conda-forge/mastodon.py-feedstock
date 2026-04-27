@@ -20,6 +20,7 @@ requirements:
     - pip
     - setuptools >=64
     - pytest-runner
+    - python-magic
 
   run:
     - python >={{ python_min }}
@@ -27,6 +28,7 @@ requirements:
     - python-dateutil
     - decorator >=4.0.0
     - blurhash >=1.1.4
+    - python-magic
 
 test:
   requires:
