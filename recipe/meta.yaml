@@ -1,13 +1,13 @@
 {% set name = "Mastodon.py" %}
-{% set version = "2.2.1" %}
+{% set version = "2.4.0" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/mastodon_py-{{ version }}.tar.gz
-  sha256: b52c85850272b4ff7a666b87c62432c5059f25c29fb485ffa1f608938744d8a4
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/mastodon_py-{{ version }}.tar.gz
+  sha256: f21ccd57cc24e454fc2b60f1ec3ab372110bb409e4f3feb664ca129320f27dbd
 
 build:
   number: 0
